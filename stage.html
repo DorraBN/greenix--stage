@@ -27,9 +27,11 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
    <link rel="stylesheet" href="greenix.css">
+   <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/6105a965-3790-4bec-ad11-463ee329b0e4/webchat/config.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
-<script src="https://mediafiles.botpress.cloud/7fb93c19-52e5-4846-b265-bf5fce5ff7e4/webchat/config.js" defer></script>
+<link rel="stylesheet" href="https://webchat-styler-css.botpress.app/prod/7ad915a5-f3ea-448b-9921-85c70d94b2c5/v6843/style.css">
+<link rel="stylesheet" href="https://webchat-styler-css.botpress.app/prod/code/7ad915a5-f3ea-448b-9921-85c70d94b2c5/v12/style.css">
    <!-- Lien vers WOW.js -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   </head>
@@ -37,7 +39,7 @@
   
   <header>
     
-  <nav class="navbar" style=" margin-top: 0px;">
+  <nav class="navbar" style=" margin-top: 0px;" id="nav">
   
   <div class="menu-bar">
     <div class="icon" id="icon">
@@ -48,21 +50,21 @@
     <ul class="menu-items" id="menuItems">
           
     <img src="logo.png" alt="" width="7%"height="15%" style="margin-top: 0px;" >
-        <li class="active"><a href=""> <i class="fa fa-home"></i>Acceuil</a></li>
+        <li class="active"><a href="#nav"> <i class="fa fa-home"></i>Acceuil</a></li>
         <li ><a href=""><i class="fa fa-user"></i>A propos</a>
         <div class="sub-menu-l">
             <ul>
                 
-                <li><a href="">mission</a></li>
+                <li><a href="#g">mission</a></li>
        
-                <li><a href="">vision</a></li>
+                <li><a href="#vis">vision</a></li>
 
                   <li class="hover-me">      <a href="">a propos</a> <i class="fa fa-angle-right"></i>
         <div class="sub-menu-2">
             <ul>
-              <li><a href="">à propos greenix</a></li>
-                <li><a href="">découvrir greenix</a></li>
-                <li><a href="">pourquoi greenix </a></li>
+              <li><a href="#about">à propos greenix</a></li>
+                <li><a href="#dec">découvrir greenix</a></li>
+                <li><a href="#pou">pourquoi greenix </a></li>
             
             </ul>
         </div>
@@ -71,13 +73,13 @@
             </ul>
         </div>
         </li>
-        <li   ><a href=""><i class="fa fa-clone"></i>services</a>
+        <li   ><a href="#ser"><i class="fa fa-clone"></i>services</a>
             <div class="sub-menu-l">
                 <ul>
                     <li><a href="">stratégie digitale</a></li>
                   
                             <li><a href="">création des sites web</a></li>
-                            <li><a href="">community management</a></li>
+                            <li><a href="">Gestion de communauté</a></li>
                     
                     <li><a href="">publicité sur réseaux sociaux</a></li>
                     <li><a href="">Analys du web</a></li>
@@ -486,7 +488,7 @@ font-size: 9px;
           </div>
         </section>
         <br><br><br>
-        <div class="split-container">  
+        <div class="split-container " id="dec">  
           <div class="right-half" style="width: 70%;">
             <section id="j"  >
            <br><br><br><br>
@@ -499,7 +501,7 @@ font-size: 9px;
        </div>
        
 <br><br>
-      <h1 style="text-align: center;" >NOS SERVICES</h1>
+      <h1 style="text-align: center;" id="ser">NOS SERVICES</h1>
       <hr style="height: 10px;width: 40%;margin-left: 470px;font-weight: 500;color: #000;" class="c">
        <div class="offers-container" id="#k">
           <div class="offer">
@@ -601,7 +603,7 @@ font-size: 9px;
   <div class="left-half"><br><br>
 <div style="float: left;"><img src="web2.jpg" alt="" style="margin-left: 30px;width: 100%;height: 100%;"></div></div>
 <div class="right-half" style="width: 70%;">
-  <section  >
+  <section   id="pou">
  
     <h3 style="font-size: 26px;text-decoration: underline;">Pourquoi Greenix ?</h3>
     Vous cherchez des solutions technologiques pour optimiser la gestion et l'organisation de vos activités ? <br> Chez Greenix, nous vous proposons des solutions informatiques sur mesure de la plus haute qualité.
@@ -623,7 +625,7 @@ et nous contribuons à accroître la réussite commerciale en tirant parti de la
   </div>
 </section></div></div>
 <br><br>
-<div class="vision-container">
+<div class="vision-container" id="vis">
 <h1 class="vision-title">🚀 Notre Vision 🌟</h1>
 <hr style="height: 10px;width: 40%;margin-left: 470px;font-weight: 500;color: #000;">
 <p class="vision-text">Chez <strong>Greenix</strong>, notre vision transcende les frontières du possible.</p>
